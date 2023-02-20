@@ -6,8 +6,9 @@ html, body {
 }
 
 #page-header {
-    margin-top:10px;
-    width:98%;
+    top:10px;
+    width:100%;
+    font-weight:lighter;
     padding:10px;
     background-color:lightgray;
     color: white;
@@ -17,17 +18,106 @@ html, body {
     z-index:100;
 }
 
+h2 {
+        color: grey;
+        font-weight:lighter;
+        font-size: 15px; 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+}
+h3{
+    color : lightslategrey;
+    font-size:30px;
+    position:static;
+    margin-top:-140px;
+    margin-left:638px;
+}
+h4{
+    color: grey;
+    font-weight:lighter;
+    font-size: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1px;
+    text-align: center;
+}
+
+#home-table {
+    background-color:white;
+    margin-top:270px;
+    margin-right:auto;
+    margin-left:auto;
+    padding:4px;
+}   
+#home-table2 {
+    background-color:white;
+    margin-right:auto;
+    margin-left:auto;
+    padding:4px;
+}   
+#page-table {
+    background-color:white;
+    margin-top:280px;
+    margin-right:auto;
+    margin-left:auto;
+    padding:4px;
+}   
+
+#home1 {
+    width:30px;
+    height:40px;
+    line-height:10px;
+    background-color:lightgray;
+    color: white;
+    text-align:center;
+    position:fixed;
+    font-weight:bold;
+    left: calc(50vw - 136px);
+    top: 20px;
+    z-index:200;
+}
+#home2 {
+    width:30px;
+    height:40px;
+    line-height:10px;
+    background-color:lightgray;
+    color: white;
+    text-align:center;
+    position:fixed;
+    font-weight:bold;
+    left: calc(50vw - 233px);
+    top: 20px;
+    z-index:200;
+}
 #description {
     width:650px;
-    height:160px;
+    line-height:150%;
     background-color:#fafcfc;
     color:grey;
     text-align:center;
     padding: 20px;
     font-size:16px;
+    margin-right: 20px;
+    margin-left:-20px;
     position:fixed;
     top:100px;
     left: calc(50vw - 325px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+}
+#description2 {
+    width:450px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding: 20px;
+    font-size:16px;
+    margin-right: 20px;
+    margin-left:-20px;
+    position:fixed;
+    top:100px;
+    left: calc(50vw - 225px);
     box-shadow:0px 0px 5px 1px grey;
     z-index: 101;
 }
@@ -44,13 +134,42 @@ a:link {
     color: white;
     text-align:center;
     position:fixed;
-    left:4px;
+    left:10px;
     top: 22px;
     z-index: 200;
 
 
 }
+.container {
+    vertical-align:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 10px;
+    gap: 10px 20px;
+    row-gap: 10px;
+    column-gap: 20px;
 
+}
+#home-table td:hover{
+    box-shadow: -1px 2px 5px 1px grey;
+    color:white;
+
+}
+#page-table td:hover{
+    box-shadow: -1px 2px 5px 1px grey;
+    color:white;
+
+}
+
+#apparel {
+    width:25px;
+    height:auto;
+    left:10px;
+    top:100px;
+
+}
 #right-page{
     width:30px;
     height:40px;
@@ -59,12 +178,15 @@ a:link {
     color: white;
     text-align:center;
     position:fixed;
-    right:4px;
+    right:10px;
     top: 22px;
     z-index:200;
 }
 
-
+td {
+    padding-right:15px;
+    padding-left:15px;
+}
 
  #info-1:hover{
     box-shadow: 6px 6px 5px 1px grey;
@@ -85,6 +207,12 @@ a:link {
     box-shadow: 6px 6px 5px 1px grey;
 }
 #right-page:hover{
+    box-shadow: -6px 6px 5px 1px grey;
+}
+#home1:hover{
+    box-shadow: -6px 6px 5px 1px grey;
+}
+#home2:hover{
     box-shadow: -6px 6px 5px 1px grey;
 }
 #info-1{
@@ -152,7 +280,7 @@ a.fill-div {
     top:430px;
 }
 body {
-    padding-bottom:500px;
+    padding-bottom:200px;
     padding-left:0px;
     padding-right:0px;
     margin:0px;
@@ -164,38 +292,408 @@ body {
     position:relative;
 
 }
-/* 
-h2 {
-    font-size: 100px;
-    padding-top: 1em;
-    font-weight: normal;
-}
 
-p { font-size: 80px;
-
-} */
-
-/* expand code */
-#open2 {
-    width:650px;
+#open-brooks {
+    width:655px;
     height:160px;
     background-color:#fafcfc;
     color:grey;
     text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
     padding: 20px;
     font-size:16px;
     position:fixed;
-    top:100px;
-    left: calc(50vw - 325px);
+    top:85px;
+    left: calc(50vw - 348px);
     box-shadow:0px 0px 5px 1px grey;
     z-index: 101;
     visibility:hidden;
   }
   
-  #open2:target {
+  #open-brooks:target {
     visibility: visible;
   }
   
-  #close2:visited * {
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-shorts {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-shorts:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-hat {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-hat:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-sunglasses {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-sunglasses:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-carbons {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-carbons:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-garmin {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-garmin:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-work {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-work:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-strava {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-strava:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-recovery {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-recovery:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-aqua {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-aqua:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-whey {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-whey:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-carbs {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-carbs:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-advil {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-advil:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-beta-alanine {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-beta-alanine:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
+    visibility: hidden;
+  }
+
+  #open-epo {
+    width:655px;
+    height:160px;
+    background-color:#fafcfc;
+    color:grey;
+    text-align:center;
+    padding-top:0;
+    margin-right:0;
+    margin-left:0;
+    padding: 20px;
+    font-size:16px;
+    position:fixed;
+    top:85px;
+    left: calc(50vw - 348px);
+    box-shadow:0px 0px 5px 1px grey;
+    z-index: 101;
+    visibility:hidden;
+  }
+  
+  #open-epo:target {
+    visibility: visible;
+  }
+  
+  #close-brooks:visited * {
     visibility: hidden;
   }
