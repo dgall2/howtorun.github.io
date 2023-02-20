@@ -43,14 +43,14 @@ h4{
     text-align: center;
 }
 
-#home-table {
+#index-table {
     background-color:white;
     margin-top:300px;
     margin-right:auto;
     margin-left:auto;
     padding:4px;
 }   
-#home-table2 {
+#index-table2 {
     background-color:white;
     margin-right:auto;
     margin-left:auto;
@@ -64,7 +64,7 @@ h4{
     padding:4px;
 }   
 
-#home1 {
+#index1 {
     width:30px;
     height:40px;
     line-height:10px;
@@ -77,7 +77,7 @@ h4{
     top: 20px;
     z-index:200;
 }
-#home2 {
+#index2 {
     width:30px;
     height:40px;
     line-height:10px;
@@ -153,7 +153,7 @@ a:link {
     column-gap: 20px;
 
 }
-#home-table td:hover{
+#index-table td:hover{
     box-shadow: -1px 2px 5px 1px grey;
     color:white;
 
@@ -210,10 +210,10 @@ td {
 #right-page:hover{
     box-shadow: -6px 6px 5px 1px grey;
 }
-#home1:hover{
+#index1:hover{
     box-shadow: -6px 6px 5px 1px grey;
 }
-#home2:hover{
+#index2:hover{
     box-shadow: -6px 6px 5px 1px grey;
 }
 #info-1{
