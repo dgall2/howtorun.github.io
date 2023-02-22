@@ -54,7 +54,7 @@ h4{
     background-color:white;
     margin-right:auto;
     margin-left:auto;
-    margin-top:350px;
+    margin-top:20px;
     padding:4px;
 }   
 #page-table {
@@ -216,6 +216,9 @@ td {
 }
 #index2:hover{
     box-shadow: -6px 6px 5px 1px grey;
+}
+#index-table2:hover{
+  box-shadow: -6px 6px 5px 1px grey;
 }
 #info-1{
     width: 300px;
